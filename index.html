@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple counterApp</title>
+    <script src="http://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <!-- overflow-hide krne se content uppar chal jata hai-->
+    <!-- wrapper-->
+    <div class="w-[100vw] h-[100vh] flex flex-col items-center justify-center bg-[#344151] gap-10">
+        <!-- Heading-->
+    <div class="text-[green] font-bold text-[20px]"> Increment And Decrement</div>
+
+    <!-- secondary wrapper-->
+    <div class="bg-white flex text-[25px] text-[#0344151] rounded-sm gap-12 p-3 px-5">
+
+       <!-- negative button-->
+       <button onclick="decrement()" class="border-r-2 border-[#bfbfbf] pr-5">
+        <i class="fa-solid fa-minus"></i>
+       </button>
+       
+
+       <div id="counter" class="font-bold">0</div>
+
+          <!--Positive button-->
+          <button onclick="increment()" class="border-l-2 border-[#bfbfbf] pl-5">
+            <i class="fa-solid fa-minus"></i>
+        </button>
+    </div>
+           
+        
+        <!-- Reset Btn-->
+        <button id="reset" onclick="reset()" class="bg-white font-bold text-[red] text-[20px] bg-gradient-to-r from-blue-500
+        bg-black hover:bg-white p-2 px-8 rounded-sm">Reset</button>
+     </div>
+   
+
+        <script src="https://kit.fontawesome.com/58a810656e.js"></script>
+        <script src="script.js"></script>
+</body>
+</html>
