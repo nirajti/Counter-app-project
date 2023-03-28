@@ -2,7 +2,7 @@
 // 1. const countvalue = document.getElementById('counter');
 // 2. const countvalue = document.querySelecto('#counter');
 
-const countvalue = document.getElementById('counter');
+const countvalue = document.getElementById('#counter');
 
 function increment() {
     // get the value from UI
